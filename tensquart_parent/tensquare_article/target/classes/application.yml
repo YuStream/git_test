@@ -1,0 +1,21 @@
+server:
+  port: 9005
+spring:
+  application:
+    name: tensquart-article
+  redis:
+    host: 192.168.200.130
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.200.130:3306/tensquare_article?characterEncoding=UTF8
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8866/eureka
+  instance:
+    prefer-ip-address: true

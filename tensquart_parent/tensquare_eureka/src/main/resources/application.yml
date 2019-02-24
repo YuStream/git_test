@@ -1,0 +1,11 @@
+server:
+  port: 8866
+spring:
+  application:
+    name: tensquare-eureka
+eureka:
+  client:
+    register-with-eureka: false  # 表示是否将自己注册到eureka server 默认为true
+    fetch-registry: false  #表示是否从eureka server获取注册信息 默认为true
+    service-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka/

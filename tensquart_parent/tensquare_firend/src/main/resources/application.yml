@@ -1,0 +1,13 @@
+server:
+  port:
+spring:
+  application:
+    name: tensquare-firend
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url:
+    username:
+    password:
+eureka:
+  client:
+    service-url:
